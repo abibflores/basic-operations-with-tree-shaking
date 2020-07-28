@@ -1,0 +1,35 @@
+{
+  "version": "0.1.0",
+  "sideEffects": false,
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "build:dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "prepare": "npm run build",
+    "prepublish": "npm run build"
+  },
+  "peerDependencies": {},
+  "husky": {
+    "hooks": {}
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": false,
+    "trailingComma": "es5"
+  },
+  "name": "basic-operations-with-tree-shaking",
+  "author": "abib flores",
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "webpack": "^4.44.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "lodash-es": "^4.17.15"
+  }
+}
